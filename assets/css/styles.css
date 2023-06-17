@@ -79,24 +79,6 @@ section#about{
       url('https://i.pinimg.com/originals/33/e2/eb/33e2eb013d11edd6b0b3f6fc284e82e8.gif')  no-repeat center center/
     cover;
 }
-section#education{
-    background: 
-    linear-gradient(
-          rgba(0, 0, 0, 0.5), 
-          rgba(0, 0, 0, 0.5)
-        ),
-        url('https://i.pinimg.com/564x/bc/9b/07/bc9b07fdb45ed1c84b4c67b16d8c561c.jpg')  no-repeat center center/
-    cover;
-}
-section#skills{
-    background: 
-    linear-gradient(
-          rgba(0, 0, 0, 0.5), 
-          rgba(0, 0, 0, 0.5)
-        ),
-        url('https://i.pinimg.com/564x/40/45/b9/4045b9be83622d5e4cd8f9ef53178054.jpg')  no-repeat center center/
-    cover;
-}
 section#experience{
     background:
     linear-gradient(
@@ -115,7 +97,7 @@ section#projects{
          url('https://i.pinimg.com/564x/5c/6c/91/5c6c91b385b36d3bba0a7e4bec2e77a1.jpg')  no-repeat center center/
     cover;
 }
-section#funfacts{
+section#resume{
     background:
     linear-gradient(
           rgba(0, 0, 0, 0.5), 
