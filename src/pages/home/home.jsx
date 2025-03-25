@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import Header from "./header";
 import Footer from "./footer";
+import MyPicture from "/src/assets/my_picture.jpg";
+import SectionBg from "/src/assets/section_bg.gif";
 // import { Card, CardContent } from "@mui/material";
 
 export default function Home() {
-
   return (
     <motion.div>
       {/* Header */}
@@ -16,7 +17,7 @@ export default function Home() {
         className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 min-h-screen text-white"
         style={{
           background:
-            "url('/src/assets/section_bg.gif') center/cover no-repeat",
+            `url(${SectionBg}) center/cover no-repeat`,
         }}
       >
         <div className="relative z-10">
@@ -48,8 +49,8 @@ export default function Home() {
           className="flex justify-center relative z-10"
         >
           <img
-            src="/src/assets/my_picture.jpg"
-            alt="Dolunay's Picture"
+            src={MyPicture}
+            alt="Luna"
             className="rounded-full w-120 shadow-2xl"
           />
         </motion.div>
