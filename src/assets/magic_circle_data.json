@@ -1,0 +1,161 @@
+[
+  {
+    "seed": 0.9927473289426416,
+    "rotation": 0,
+    "rotationSpeed": 2,
+    "offsetX": 517,
+    "offsetY": 512,
+    "width": 1024,
+    "height": 1024,
+    "id": 0,
+    "borderWidth": "7",
+    "margin": "32",
+    "borderSpace": "45",
+    "lineWidth": "7",
+    "tier": 1,
+    "symmetryCount": 8,
+    "drawTextRing": true,
+    "wrapTextRingInCircle": true,
+    "ringText": "ᚢᚾᛞᛖᚱ ᛏᚻᛖ ᚷᛚᚩᚹ ᚩᚠ ᛏᚻᛖ ᚠᚢᛚᛚ ᛗᚩᚩᚾ, ᛁ ᚳᚪᛚᛚ ᚠᚩᚱᛏᚻ ᚻᛁᛞᛞᛖᚾ ᛏᚱᚢᛏᚻᛋ ᚪᚾᛞ ᚪᚹᚪkᛖᚾ ᛏᚻᛖ qᚢᛁᛖᛏ ᛈᚩᚹᛖᚱ ᚹᛁᛏᚻᛁᚾ ᛏᚻᛖ ᛋᚻᚪᛞᚩᚹᛋ.",
+    "color": "#ffffff"
+  },
+  {
+    "id": 1,
+    "parentID": 0,
+    "tier": 1,
+    "symmetryCount": 6,
+    "radius": 435,
+    "rotation": 0,
+    "rotationSpeed": 1,
+    "originRelativeToParent": true,
+    "offsetY": 0,
+    "offsetX": 0,
+    "lineWidth": "7",
+    "minSectionDelta": 53.79059027046537,
+    "maxSectionDelta": 217.5,
+    "sectionSize": 122.32240956271532,
+    "connectBorder": true,
+    "connectMidPoints": true,
+    "connectPoints": true,
+    "connectPointsSkip": 2,
+    "inscribePoints": false,
+    "linesToCenter": true,
+    "symbolRing": true,
+    "drawTextRing": true,
+    "wrapTextRingInCircle": true,
+    "symbolsAtPoints": true,
+    "symbolsSize": 122.32240956271532,
+    "ringText": "ᛒᚣ ᛏᚻᛖ ᛋᛁᛚvᛖᚱ ᛚᛁᚷᚻᛏ ᚩᚠ ᛏᚻᛖ ᚠᚢᛚᛚ ᛗᚩᚩᚾ, ᛁ ᛒᛁᚾᛞ ᛗᚣ ᛞᚱᛖᚪᛗᛋ ᛏᚩ ᛏᚻᛖ ᛏᛁᛞᛖᛋ ᚪᚾᛞ ᛋᚢᛗᛗᚩᚾ ᚳᛚᚪᚱᛁᛏᚣ ᚠᚱᚩᛗ ᛏᚻᛖ ᛞᛖᛈᛏᚻᛋ ᚩᚠ ᚾᛁᚷᚻᛏ.",
+    "symbolText": "🝉🜣🜰🜵🜵🜫🜑🜕🜄🜛🜛🜯",
+    "pointList": [
+      {
+        "x": 376.72105064623076,
+        "y": -217.5
+      },
+      {
+        "x": 376.7210506462308,
+        "y": 217.49999999999991
+      },
+      {
+        "x": 2.6636067881454933e-14,
+        "y": 435
+      },
+      {
+        "x": -376.72105064623076,
+        "y": 217.50000000000014
+      },
+      {
+        "x": -376.721050646231,
+        "y": -217.49999999999974
+      },
+      {
+        "x": -7.990820364436479e-14,
+        "y": -435
+      }
+    ],
+    "color": "#81a7e4"
+  },
+  {
+    "id": 2,
+    "parentID": 1,
+    "parentPointIndex": -1,
+    "tier": 1,
+    "symmetryCount": 3,
+    "radius": 312.67759043728466,
+    "rotation": 0,
+    "rotationSpeed": 1,
+    "originRelativeToParent": true,
+    "offsetY": 0,
+    "offsetX": 0,
+    "lineWidth": "7",
+    "minSectionDelta": 53.79059027046537,
+    "maxSectionDelta": 217.5,
+    "sectionSize": 103.19245136481527,
+    "carveSpace": false,
+    "outerRing": false,
+    "connectBorder": true,
+    "connectMidPoints": false,
+    "connectPoints": true,
+    "connectPointsSkip": 1,
+    "inscribePoints": true,
+    "linesToCenter": true,
+    "symbolRing": true,
+    "drawTextRing": false,
+    "wrapTextRingInCircle": true,
+    "symbolsAtPoints": true,
+    "symbolsSize": 103.19245136481527,
+    "ringText": "Dolunay",
+    "symbolText": "🜬🝌🜥🜤🜙🜔",
+    "pointList": [
+      {
+        "x": 270.7867365127948,
+        "y": 156.33879521864228
+      },
+      {
+        "x": -270.78673651279473,
+        "y": 156.33879521864245
+      },
+      {
+        "x": -5.743794154411915e-14,
+        "y": -312.67759043728466
+      }
+    ],
+    "color": "#25172b"
+  },
+  {
+    "id": 3,
+    "parentID": 2,
+    "parentPointIndex": -1,
+    "tier": 1,
+    "symmetryCount": 1,
+    "radius": 209.4851390724694,
+    "rotation": 0,
+    "rotationSpeed": 1,
+    "originRelativeToParent": true,
+    "offsetY": 0,
+    "offsetX": 0,
+    "lineWidth": "7",
+    "minSectionDelta": 53.79059027046537,
+    "maxSectionDelta": 217.5,
+    "sectionSize": 175.7752999817135,
+    "carveSpace": false,
+    "outerRing": false,
+    "connectBorder": false,
+    "connectMidPoints": false,
+    "connectPoints": false,
+    "connectPointsSkip": 2,
+    "inscribePoints": false,
+    "linesToCenter": false,
+    "symbolRing": true,
+    "drawTextRing": false,
+    "wrapTextRingInCircle": true,
+    "symbolsAtPoints": true,
+    "symbolsSize": 175.7752999817135,
+    "ringText": "Dolunay",
+    "symbolText": "🜵🜶",
+    "eraseCenter": true,
+    "centerSymbol": true,
+    "centerSymbolText": "🝃",
+    "color": "#751010"
+  }
+]
