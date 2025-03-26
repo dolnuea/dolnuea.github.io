@@ -2,17 +2,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "./header";
 import Footer from "./footer";
-import MyPicture from "/src/assets/my_picture.jpg";
-import SectionBg from "/src/assets/section_bg.gif";
-// import { Card, CardContent } from "@mui/material";
+import MyPicture from "../../assets/my_picture.jpg";
+import SectionBg from "../../assets/section_bg.gif";
 
 export default function Home() {
   return (
     <motion.div>
-      {/* Header */}
       <Header />
 
-      {/* Hero Section */}
       <section
         className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 min-h-screen text-white"
         style={{
@@ -27,7 +24,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-4xl font-bold mb-4"
           >
-            Hi, I’m Dolunay, a software engineer.
+            Hi, I’m Luna, a software engineer.
           </motion.h2>
           <p className="aboutme mb-6 text-gray-200">
             A whimsical tech gal who enjoys coding, artificial intelligence and
@@ -55,55 +52,9 @@ export default function Home() {
           />
         </motion.div>
 
-        {/* Overlay for better readability */}
         <div className="absolute inset-0 bg-black/40"></div>
       </section>
 
-      {/* Projects Section */}
-      {/* <motion.section
-        id="projects"
-        className="p-8 bg-gray-50 dark:bg-gray-800"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        style={{
-          backgroundColor: "#040436",
-          padding: "5rem 2rem",
-        }}
-      >
-        <motion.h3
-          whileHover={{
-            scale: 1.1,
-          }}
-          transition={{ duration: 0.3 }}
-          className="text-2xl font-semibold mb-6"
-        >
-          My Projects
-        </motion.h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Card>
-            <CardContent>
-              <h4 className="font-bold mb-2">In Progress Projects</h4>
-              <p>Hosted projects currently being built and iterated on.</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent>
-              <h4 className="font-bold mb-2">Tarot App (GPT)</h4>
-              <p>AI-powered tarot reading tool with custom spreads.</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent>
-              <h4 className="font-bold mb-2">Horary Astrology App (GPT)</h4>
-              <p>Get instant horary chart interpretations using GPT models.</p>
-            </CardContent>
-          </Card>
-        </div>
-      </motion.section> */}
-
-      {/* Footer */}
       <Footer />
     </motion.div>
   );

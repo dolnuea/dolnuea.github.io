@@ -3,40 +3,39 @@ import './App.css';
 import Home from './pages/home/home';
 import { motion, AnimatePresence } from 'motion/react';
 import MagicCircle from './assets/magic_circle.gif';
-import LandingGif from './assets/landing_page.gif'; // Your landing gif path
+import LandingGif from './assets/landing_page.gif';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
-  const [showHome, setShowHome] = useState(false);  // New state to trigger Home page display
-  const [showLandingPage, setShowLandingPage] = useState(false); // Landing page state
+  const [showHome, setShowHome] = useState(false);  
+  const [showLandingPage, setShowLandingPage] = useState(false); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowLandingPage(true); // Trigger white flash
+      setShowLandingPage(true); 
       setTimeout(() => {
-        setShowSplash(false); // Hide splash screen
-      }, 100); // splash screen duration
-    }, 1500); // delay for splash screen
+        setShowSplash(false); 
+      }, 100);
+    }, 1500); 
 
     return () => clearTimeout(timer);
   }, []);
 
-  // This useEffect handles transitioning to Home after flash effect
   useEffect(() => {
     if (!showSplash) {
       setTimeout(() => {
-        setShowLandingPage(false); // End the flash effect
-        setShowHome(true); // Show Home after flash
-      }, 2000); // flash effect duration
+        setShowLandingPage(false); 
+        setShowHome(true);
+      }, 2000); 
     }
   }, [showSplash]);
 
   useEffect(() => {
     if (showLandingPage) {
       setTimeout(() => {
-        setShowLandingPage(false); // Hide landing page
-        setShowHome(true); // Show Home after landing page
-      }, 3000); // duration of landing page (3 seconds)
+        setShowLandingPage(false); 
+        setShowHome(true);
+      }, 3000); 
     }
   }, [showLandingPage]);
 

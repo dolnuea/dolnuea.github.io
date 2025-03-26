@@ -35,12 +35,6 @@ h3 {
   font-size: 30px;
 }
 
-.aboutme {
-  font-family: 'civitype', fantasy;
-  font-size: 40px;
-}
-
-
 @font-face {
   font-family: 'FairyDust';
   src: url('./assets/fonts/fairydust/FairyDustB.ttf') format('truetype');
@@ -93,8 +87,8 @@ a {
 } 
 a:hover {
   color: #b2aef8;
-  transform: scale(1.1);  /* Slight scale up effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Subtle shadow effect */
+  transform: scale(1.1);  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  
 }
 
 body {
@@ -111,7 +105,7 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
   font-family: 'BLKCHCRY', sans-serif;
   background-color: #1a1a1a;
