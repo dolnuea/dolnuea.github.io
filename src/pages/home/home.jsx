@@ -1,20 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Header from "./header";
-import Footer from "./footer";
 import MyPicture from "../../assets/my_picture.jpg";
 import SectionBg from "../../assets/section_bg.gif";
 
 export default function Home() {
   return (
     <motion.div>
-      <Header />
-
       <section
         className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 min-h-screen text-white"
         style={{
-          background:
-            `url(${SectionBg}) center/cover no-repeat`,
+          background: `url(${SectionBg}) center/cover no-repeat`,
         }}
       >
         <div className="relative z-10">
@@ -54,8 +49,6 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/40"></div>
       </section>
-
-      <Footer />
     </motion.div>
   );
 }

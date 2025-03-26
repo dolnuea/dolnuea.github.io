@@ -1,22 +1,28 @@
-import { useState, useEffect } from 'react';
-import './App.css';
-import Home from './pages/home/home';
-import { motion, AnimatePresence } from 'motion/react';
-import MagicCircle from './assets/magic_circle.gif';
-import LandingGif from './assets/landing_page.gif';
+import { useState, useEffect } from "react";
+import "./App.css";
+import Home from "./pages/home/home";
+import Resume from "./pages/resume/resume";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import { motion, AnimatePresence } from "motion/react";
+import MagicCircle from "./assets/magic_circle.gif";
+import LandingGif from "./assets/landing_page.gif";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
-  const [showHome, setShowHome] = useState(false);  
-  const [showLandingPage, setShowLandingPage] = useState(false); 
+  const [showLandingPage, setShowLandingPage] = useState(false);
+  const [showHome, setShowHome] = useState(false); // Corrected this line
+
+  const isLandingOrSplashPage = showSplash || showLandingPage;
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowLandingPage(true); 
+      setShowLandingPage(true);
       setTimeout(() => {
-        setShowSplash(false); 
+        setShowSplash(false);
       }, 100);
-    }, 1500); 
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,23 +30,23 @@ function App() {
   useEffect(() => {
     if (!showSplash) {
       setTimeout(() => {
-        setShowLandingPage(false); 
-        setShowHome(true);
-      }, 2000); 
+        setShowLandingPage(false);
+        setShowHome(true); // Corrected this line
+      }, 2000);
     }
   }, [showSplash]);
 
   useEffect(() => {
     if (showLandingPage) {
       setTimeout(() => {
-        setShowLandingPage(false); 
-        setShowHome(true);
-      }, 3000); 
+        setShowLandingPage(false);
+        setShowHome(true); // Corrected this line
+      }, 3000);
     }
   }, [showLandingPage]);
 
   return (
-    <>
+    <Router>
       <AnimatePresence>
         {showSplash && (
           <motion.div
@@ -63,27 +69,25 @@ function App() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <img
-              src={LandingGif}
-              alt="Landing"
-              className="landing-gif"
-            />
+            <img src={LandingGif} alt="Landing" className="landing-gif" />
             <h1 className="landing-text">Hi There, Welcome to my page</h1>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {showHome && (
-        <motion.div
-          className="home-container home-fade-in"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <Home />
-        </motion.div>
+      {/* Routes for Home & Resume */}
+      {!isLandingOrSplashPage && (
+        <>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Home />} />{" "}
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+          <Footer />
+        </>
       )}
-    </>
+    </Router>
   );
 }
 
